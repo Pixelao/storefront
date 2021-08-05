@@ -13,13 +13,13 @@
                             <button class="btn btn-sm"
                                     *ngIf="canAdjustQuantities"
                                     (click)="decrement(line)">
-                                <fa-icon aria-label="Remove 1" icon="minus"></fa-icon>
+                                <fa-icon aria-label="Eliminar 1" icon="minus"></fa-icon>
                             </button>
                             <div class="qty">{{ line.quantity }}</div>
                             <button class="btn btn-sm"
                                     *ngIf="canAdjustQuantities"
                                     (click)="increment(line)">
-                                <fa-icon aria-label="Add 1" icon="plus"></fa-icon>
+                                <fa-icon aria-label="Añadir 1" icon="plus"></fa-icon>
                             </button>
                         </div>
                         <div class="total">
@@ -35,7 +35,7 @@
         </ng-container>
     </div>
     <div class="order-adjustments" *ngIf="cart.discounts.length">
-        Order adjustments:
+        Ajustes del pedido:
         <div class="adjustment" *ngFor="let discount of cart.discounts">
             <div>{{ discount.description }}</div>
             <div>{{ discount.amountWithTax | formatPrice }}</div>
@@ -43,7 +43,7 @@
     </div>
     <div class="shipping">
         <div class="shipping-price">
-            <span>Shipping:</span>
+            <span>Envio:</span>
             <span>{{ cart.shippingWithTax | formatPrice }}</span>
         </div>
         <div class="shipping-method" *ngFor="let shippingLine of cart.shippingLines">

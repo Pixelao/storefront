@@ -5,16 +5,16 @@ import { ProductListComponent } from './core/components/product-list/product-lis
 
 export const routes: Route[] = [
     {
-        path: 'category/:slug',
+        path: 'categoria/:slug',
         component: ProductListComponent,
         pathMatch: 'full',
     },
     {
-        path: 'search',
+        path: 'buscar',
         component: ProductListComponent,
     },
     {
-        path: 'product/:slug',
+        path: 'producto/:slug',
         component: ProductDetailComponent,
     },
     {

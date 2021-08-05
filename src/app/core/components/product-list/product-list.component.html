@@ -4,7 +4,7 @@
         <vsf-collection-breadcrumbs [breadcrumbs]="breadcrumbs$ | async"></vsf-collection-breadcrumbs>
         <h1 class="display-1 collection-name">{{ (collection$ | async)?.name }}</h1>
         <h1 class="display-4 text-muted" *ngIf="searchTerm$ | async as term">
-             Results for <span class="text-dark">"{{ term }}"</span>
+             Resultados para <span class="text-dark">"{{ term }}"</span>
         </h1>
     </div>
 
@@ -38,7 +38,7 @@
                         <button class="btn btn-light btn-lg d-inline-flex align-items-center"
                                 (click)="loadMore()"
                                 [disabled]="loading$ | async">
-                            Load more
+                            Cargar más
                             <span [class.show]="loading$ | async"
                                   class="loading-indicator spinner-grow spinner-grow-sm"
                                   role="status"
@@ -53,7 +53,7 @@
 
 <ng-template #noResults>
     <div class="no-results col-12">
-        <p class="h1">No results</p>
+        <p class="h1">No hay resultados</p>
         <fa-icon icon="sad-cry" size="10x"></fa-icon>
     </div>
 </ng-template>

@@ -79,7 +79,7 @@ export class AppModule {
             if (this.document?.defaultView) {
                 const parsed = this.urlSerializer.parse(event.urlAfterRedirects);
                 const primaryRoot = parsed.root.children.primary;
-                const isFacetFilterNavigation = (primaryRoot?.segments[0]?.path === 'category' &&
+                const isFacetFilterNavigation = (primaryRoot?.segments[0]?.path === 'categoria' &&
                     primaryRoot?.segments[1]?.parameterMap.has('facets'));
 
                 if (!isFacetFilterNavigation) {

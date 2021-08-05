@@ -31,7 +31,7 @@
                         </div>
                         <button [disabled]="qty === 0"
                                 class="btn btn-primary btn-lg"
-                                (click)="addToCart(selectedVariant, qty)">Add to cart
+                                (click)="addToCart(selectedVariant, qty)">Añadir al Carrito
                         </button>
                     </div>
                 </div>
@@ -68,6 +68,6 @@
         <div>{{ quantity }} x {{ variant.name }}</div>
     </div>
     <button class="btn btn-sm btn-outline-primary btn-block" (click)="viewCartFromNotification(close)">
-        View cart
+        Ver Carrito
     </button>
 </ng-template>

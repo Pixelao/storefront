@@ -58,7 +58,7 @@ export class CollectionsMenuMobileComponent implements OnInit {
             event.preventDefault();
             event.stopImmediatePropagation();
         } else {
-            this.router.navigate(['/category/', collection.slug]);
+            this.router.navigate(['/categoria/', collection.slug]);
             this.close();
         }
     }
